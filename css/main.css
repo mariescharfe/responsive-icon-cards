@@ -22,19 +22,32 @@ body {
   margin: 0;
 }
 
+.card {
+  margin: 0;
+}
+
 .cards {
   list-style-type: none;
   padding: 0;
-  margin: .75em;
+  margin: .5em;
 }
 
 .card-body h2 {
   margin: 0;
   font-weight: normal;
+  padding-top: .86em;
 }
 
-.card-img img{
+.card-body p {
+  margin-top: 0;
+  margin-bottom: 1.33em;
+
+}
+
+.card-img img {
   max-width: 50px;
+  margin: auto;
+  display: block;
 }
 
 @media only screen and (min-width: 25em) {
@@ -49,6 +62,27 @@ body {
     margin: 0 0 1.3rem;
   }
 
+  .card-img {
+    display: inline-block;
+    max-width: 10%;
+  }
+
+  .card-body {
+    display: inline-block;
+    max-width: 88%;
+    padding-left: 1.5em;
+  }
+
+  .card-body h2 {
+    padding-top: 0;
+  }
+
+  .cards {
+    padding: 0;
+    margin-top: .25em;
+    margin-left: .75em;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -61,6 +95,27 @@ body {
   h1,
   p {
     margin: 0 0 1.4rem;
+  }
+
+  .card {
+    display: inline-block;
+  }
+
+  li {
+    width: 32%;
+  }
+
+  .card-img {
+    display: block;
+    margin: auto;
+    padding-bottom: 1.5em;
+  }
+
+  .card-body {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
 
 }
